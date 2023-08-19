@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add this CSS to align labels and inputs in the same line */
+        .contact p {
+            display: inline-block;
+            margin: 0;
+            vertical-align: top;
+            width: 120px; /* Adjust the width as needed */
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            display: inline-block;
+            width: calc(100% - 130px); /* Adjust the width to accommodate label width and spacing */
+            vertical-align: top;
+        }
+    </style>
+    <title>Triholo</title>
+</head>
+<body>
+    <header>
+        <h1>Triholo Inc.</h1>
+        <p>Welcome to our amazing product service!</p>
+    </header>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="process-form.php" method="POST">
+            <p for="name">Name:</p>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <p for="email">Email:</p>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <p for="message">Message:</p>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="thank-you-message" style="display: none;"></div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Fictional Product. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

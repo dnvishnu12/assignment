@@ -1,0 +1,104 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+     /* Gradient background */
+     background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,47,130,1) 35%, rgba(0,212,255,1) 100%);
+}
+h1{
+    font-family: "Lucida Console", Monaco, monospace;
+font-size: 31px;
+letter-spacing: -1.8px;
+word-spacing: -2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+}
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p{
+    color: beige;
+}
+/* Form styling */
+form {
+    
+    display: flex;
+    flex-direction: column;
+}
+#name, #email, #message{
+    background-color: silver;
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+    border: 1px; /* Add a basic border */
+    border-radius: 8px; /* Add border curvature */
+    padding: 8px; /* Add some padding for spacing */
+
+    /* Add a box shadow for a stylish effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for when the input or textarea is focused */
+input:focus, textarea:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Change box shadow on focus */
+}
+
+
+/* Button styling */
+/* Button styling */
+button {
+    align-self: center;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 15px; /* Adjust the padding to control the button size */
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    background-blend-mode: lighten;
+    border-radius: 10%;
+   
+}
+button:hover{
+    opacity: inherit;
+    background-color: cadetblue;
+    border-style: ridge;
+}
+
+
+/* Add your existing CSS styles */
+
+/* Style for the thank you message */
+#thank-you-message {
+    
+    margin-top: 20px;
+    padding: 15px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(131,156,69,1) 0%, rgba(155,146,35,1) 0%, rgba(143,151,52,1) 0%, rgba(237,255,4,1) 0%, rgba(0,212,255,1) 100%);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-family: 'Your Selected Font', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
